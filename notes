@@ -1,0 +1,146 @@
+atomic bocks
+	T/F
+		simpler seeding function
+	2-bit numbers
+
+seeding schemes
+	pad with emptiness
+	periodic
+		just hash swapped?
+	hashing repeated?
+
+locating a subsequence
+	gray area for out-of bounds
+
+small scale simulation
+	forward??
+	backward??
+	simple
+		hashlife until lower horizon
+		bricklife until upper horizon
+	simpler
+		hashlife until lower horizon
+		convert to vector
+		compute naively
+		
+		
+
+should blocks be stored along with their width?
+	yay
+		doesn't need to traverse trees when detetrmining seq length
+		useful for printing
+	nay
+		makes hashing function more complicated
+			maybe dedicated head, tail & cons functions?
+
+depth or width?
+	depth
+	width
+		depth functions are wonky 
+			but consing unequal blocks should throw exception
+
+for !fun!
+	assume 1 cell is planck length
+	measure
+		something as big and old as the universe
+			no inflation?
+	what are the computational requirements?
+
+looks like O(2^n)
+
+I bet it spends most times calculating hashes of big trees!
+	solution - each cell should store hash
+class?
+
+...............#................
+ .............##...............
+  ...........###..............
+   .........##.#.............
+    .......#####............
+     .....##...#...........
+      ...###..##..........
+       .##.#.###.........
+        ######.#........
+
+new seeding functions
+	fill(block, n)
+	lpad(block, padding)
+	rpad(block, padding)
+
+vector addressing and conversion
+vector simulation
+
+padding vectors
+
+simple CLI
+	[n] - small simulation of n steps
+	tab [n] - first n entries of tab
+		tab[-n] ???
+			is this really nice in python?
+	
+"parse" module
+
+call by value & reference in python
+	objects
+	properties
+	lists
+	tuples
+	strings
+	dicts
+
+BONUS
+	vector to tree
+
+clean up the notes
+
+tree to vector
+	takes the tree, an offset and the bounds
+	if out of bounds, returns an empty list
+	if leaf, returns a list containing its value
+	calculates offsets for children
+		parent offset for left
+		parent offset + 1/2 parent width for right
+	recurses for each child
+	concatenates resulting lists
+	returns the result
+
+
+
+
+
+logarithmic information density survey of cellular automata
+
+H(s:B(n), h) -> (r:B(n-1), h_new)
+
+compact dimension automata
+	different rules?
+
+merge/split automata
+
+stochastic hashlife?
+	trees hash to distributions
+	resolution of a distribution grows as it's hashed
+
+2 space step error
+
+complexity survey
+	number of unique patterns per generation 			/todo - move
+
+
+for the authentic part of web
+
+==================================================
+;DISTRIBUTED HASH110/HASHLIFE
+
+is it smart-contractable?
+	why would you consider that?
+		immutable results
+		mostly passing hashes
+		gets more difficult with time
+
+proving fraud
+proving the proof of fraud???
+
+so what would happen?
+
+evaluation heuristics
